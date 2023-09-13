@@ -9,8 +9,8 @@ const FontSize = {
       el.style.fontSize = binding.value + "px";
     }
 
-    let size = 50;
-    let color = "red";
+    let size;
+    let color;
     switch (binding.arg) {
       case "small":
         size = 10;
@@ -26,6 +26,8 @@ const FontSize = {
         break;
 
       default:
+        size = 50;
+        color = "green";
         break;
     }
     el.style.fontSize = size + "px";
