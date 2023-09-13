@@ -39,22 +39,10 @@ const FontSize = {
     }
   },
 };
-const Demo = {
-  mounted: (el, binding) => {
-    el.style.color = binding.value.color;
-    if (binding.value.booleanvalue) {
-      console.log("pass any function");
-      el.style.fontSize = "30px";
-    } else {
-      console.log("pass any function");
-    }
-  },
-};
 export default {
   directives: {
     // Custom Direcative
     FontSize,
-    Demo,
   },
   data() {
     return {
